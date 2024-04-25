@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>College Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+    <h1 id="title">College Survey Form</h1>
+    <p id="description"><em>Hi! This is a short survey created to get your insight on beginning college. Thank you for your time!</em></p>
+    <div class="survey"> 
+    <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name:<input id="name" type="text" placeholder="Enter your name" class="long" required></input></label>
+      <label id="email-label">Email:<input id="email" type="email" placeholder="Enter your email" class="long" required></input></label>
+      <label id="number-label">Age: (optional)<input id="number" type="number" placeholder="Enter your age" class="long" min="16" max="110"></input></label>
+      </fieldset>
+      <fieldset>
+      <label>What do you think is the most important thing to do while in college?:
+        <select id="dropdown">
+          <option>Select an option</option>
+          <option>Networking</option>
+          <option>Internships</option>
+          <option>Partying and fests</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Are you currently in college?</legend>
+      <label><input id="yes" type="radio" name="yes-no" value="yes" class="inline"></input>Yes</label>
+      <label><input type="radio" id="no" name="yes-no" value="no" class="inline"></input>No</label>
+    </fieldset>
+    <fieldset>
+      <legend>Select the most important things to take to college: (Check all that apply)</legend>
+      <label><input type="checkbox" class="inline" value="backpack" class="inline"></input>Backpack</label>
+      <label><input type="checkbox" class="inline" value="adapter" class="inline"></input>Universal Adapter</label>
+      <label><input type="checkbox" class="inline" value="backpack" class="inline"></input>Utensils</label>
+      <label><input type="checkbox" class="inline" value="power" class="inline"></input>Powerbank</label>
+      <label><input type="checkbox" class="inline" value="hangers" class="inline"></input>Clothes hangers</label>
+      <label><input type="checkbox" class="inline" value="food" class="inline"></input>Instant food</label>
+    </fieldset>
+    <fieldset>
+      <label for= "suggestions">Any suggestions for a college fresher:<textarea id="suggestions" name="suggestions" rows="3" cols="30" class="bottom"></textarea></label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+</html>
